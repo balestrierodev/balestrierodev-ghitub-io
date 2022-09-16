@@ -1,0 +1,51 @@
+.enterFromRight {
+    animation: enterFromRight 0.25s ease backwards;
+}
+
+.enterFromLeft {
+    animation: enterFromLeft 0.25s ease backwards;
+}
+
+.float {
+    animation: float 0.5s ease alternate infinite;
+}
+
+.enterFromRight,
+.enterFromLeft {
+    animation-delay: var(--animation-delay);
+}
+
+@keyframes enterFromRight {
+    0% {
+        translate: 100% 0%;
+        filter: blur(10px);
+    }
+
+    100% {
+        translate: 0% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes enterFromLeft {
+    0% {
+        translate: -100% 0%;
+        transform-origin: top left;
+        filter: blur(50px);
+    }
+
+    100% {
+        translate: 0% 0%;
+        filter: blur(0px);
+    }
+}
+
+@keyframes float {
+    0% {
+        translate: 0px 0px;
+    }
+
+    100% {
+        translate: 0px 10px;
+    }
+}

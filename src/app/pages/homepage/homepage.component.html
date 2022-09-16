@@ -1,0 +1,6 @@
+<header (onGoTo)="goTo($event)"></header>
+<article #sections>
+    <div [innerHtml]="page$ | async"></div>
+</article>
+<questions #sections></questions>
+<footer #sections></footer>

@@ -1,0 +1,5 @@
+<h2 class="enterFromLeft">Domande frequenti</h2>
+<ng-container *ngFor="let question of questions">
+    <h3 *ngIf="question" class="enterFromRight" [innerHtml]="question?.title"></h3>
+    <div *ngIf="question" class="enterFromLeft" [innerHtml]="question?.body"></div>
+</ng-container>

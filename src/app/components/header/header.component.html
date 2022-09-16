@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="top">
+        <div class="avatar enterFromLeft">
+            <img class=""
+                src="https://avatars.githubusercontent.com/u/16978824?s=400&u=01cc05db375bfac17eeda602acc158b28add897e&v=4" />
+        </div>
+        <div class="title enterFromRight">
+            <h1>{{ title }}</h1>
+            <h2>{{ subtitle }}</h2>
+            <h2>Fullstack Developer</h2>
+        </div>
+    </div>
+    <nav class="enterFromRight">
+        <button (click)="goTo(0)">
+            <span class="material-symbols-rounded">menu_book</span>
+            <strong>La mia storia</strong>
+        </button>
+        <button (click)="goTo(1)">
+            <span class="material-symbols-rounded">forum</span>
+            <strong>Domande Frequenti</strong>
+        </button>
+        <button data-label="Teniamoci in contatto!" (click)="goTo(2)">
+            <span class="material-symbols-rounded">perm_phone_msg</span>
+            <strong>Contattami</strong>
+        </button>
+    </nav>
+</div>

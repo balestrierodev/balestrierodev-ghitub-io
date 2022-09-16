@@ -1,0 +1,117 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    padding-bottom: 25px;
+    position: relative;
+
+    h2 {
+        padding: 15px;
+        font-size: 7vmin;
+        color: #37474f;
+        text-align: center;
+        padding: 25px;
+    }
+
+    h3 {
+        font-size: 5vmin;
+        color: #37474f;
+        text-align: center;
+        padding: 0px 25px;
+    }
+
+    p {
+        font-size: 4vmin;
+        color: #37474f;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .social {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10vw;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 250ms ease;
+            height: 150px;
+
+            &:hover {
+                span {
+                    scale: 1.2;
+                }
+            }
+
+            span {
+                transition: all 250ms ease;
+                font-size: 8vh;
+                flex: 1;
+
+                &.telegram {
+                    width: 7vh;
+                    height: 7vh;
+                    max-width: 7vh;
+                    max-height: 7vh;
+                    min-width: 7vh;
+                    min-height: 7vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    rotate: -45deg;
+                    background: cadetblue;
+                    border-radius: 100%;
+                    color: white;
+                    text-align: center;
+                    font-size: 4vh;
+                    text-indent: 5px;
+                }
+            }
+
+            strong {
+                font-size: 3vmin;
+                font-weight: bold;
+                margin-top: 2vmin;
+            }
+        }
+    }
+
+    .license {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        p {
+            font-size: 4vmin;
+            padding: 5px 25px;
+            max-width: 1200px;
+            line-height: 5vmin;
+
+            &:last-of-type {
+                font-size: 3vmin;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    :host {
+        .social {
+            a {
+                height: 88px;
+            }
+        }
+    }
+}

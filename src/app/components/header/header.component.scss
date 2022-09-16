@@ -1,0 +1,153 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 25px;
+    position: relative;
+
+    .avatar {
+
+        img {
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 2vmin white;
+            overflow: hidden;
+            object-fit: cover;
+            width: 40vmin;
+            height: 40vmin;
+            filter: grayscale(100%) blur(0.5px);
+        }
+
+    }
+
+    .title {
+        margin-left: 50px;
+
+        h1 {
+            font-size: 12vmin;
+            margin-bottom: 10px;
+            text-indent: -5px;
+        }
+
+        h2 {
+            font-size: 4vmin;
+        }
+
+    }
+
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 999999;
+
+    button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: white;
+        cursor: pointer;
+        background-color: transparent;
+        opacity: 0.5;
+        transition: all 150ms ease;
+        border: none;
+        outline: none;
+        width: auto;
+        animation: float 500ms alternate-reverse backwards;
+        position: relative;
+
+        &:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+
+        &:hover {
+            opacity: 1;
+            border: none;
+            outline: none;
+
+            span {
+                scale: 1.1;
+            }
+        }
+
+
+        span {
+            font-size: 6.2vmax;
+            text-align: -99999px;
+            user-select: none;
+            transition: all 250ms ease;
+            transform-origin: bottom center;
+        }
+
+        strong {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 4vmin;
+            bottom: 66px;
+            left: 0px;
+            font-weight: bold;
+            margin-top: 2vmin;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 0px;
+
+        .avatar {
+            margin-bottom: 25px;
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        .title {
+            margin-left: 0px;
+
+            h1,
+            h2 {
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+            }
+
+            h2 {
+                margin-top: 10px;
+            }
+        }
+    }
+}

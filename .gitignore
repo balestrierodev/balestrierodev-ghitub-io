@@ -2,7 +2,8 @@
 
 # Compiled output
 /dist
-/website/*.*
+/website/*
+!/website/.gitkeep
 /tmp
 /out-tsc
 /bazel-out

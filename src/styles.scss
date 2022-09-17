@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600&family=Patua+One&family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600&family=Patua+One&display=swap');
 @import url("./animations.scss");
 
 * {
@@ -130,6 +130,7 @@ button {
         height: 10px;
         width: 10px;
         border-radius: 1ex;
+        background-color: white;
     }
 
     ::-webkit-scrollbar-thumb {

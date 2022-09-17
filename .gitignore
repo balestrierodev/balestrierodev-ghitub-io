@@ -2,7 +2,7 @@
 
 # Compiled output
 /dist
-/website/*
+/website
 /tmp
 /out-tsc
 /bazel-out

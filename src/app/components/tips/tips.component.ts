@@ -44,7 +44,6 @@ export class TipsComponent implements OnInit, OnDestroy {
                         const body = converter.makeHtml(
                             row.replace('#### ' + title, '')
                         );
-                        console.debug(body);
                         return {
                             id: i,
                             title,

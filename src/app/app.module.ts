@@ -13,21 +13,21 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { GithubApiService } from './services/github-api-service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    HeaderComponent,
-    TipsComponent,
-    QuestionsComponent,
-    FooterComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-  ],
-  providers: [GithubApiService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomepageComponent,
+        HeaderComponent,
+        TipsComponent,
+        QuestionsComponent,
+        FooterComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+    ],
+    providers: [GithubApiService],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

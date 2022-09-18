@@ -58,7 +58,6 @@ export class TipsComponent implements OnInit, OnDestroy {
                 })
             )
             .subscribe((_) => {
-                console.log('entro');
                 const newTip = this.getTip();
                 this.tip = null;
                 setTimeout(() => {

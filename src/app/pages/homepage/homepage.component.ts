@@ -52,7 +52,6 @@ export class HomepageComponent implements AfterViewInit, OnDestroy {
     }
 
     goTo(i: number) {
-        console.log(this.pagesRef?.toArray()[i]);
         this.pagesRef
             ?.toArray()
             [i].nativeElement.scrollIntoView({ behavior: 'smooth' });

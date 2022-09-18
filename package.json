@@ -3,7 +3,9 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "serve": "ng serve --host=192.168.1.100",
+        "start": "ng serve",
+        "serve": "ng serve",
+        "expose": "ng serve --host=192.168.1.100",
         "build": "ng build",
         "prod": "ng build --configuration=production --output-hashing none && cp -fR ./dist/* website",
         "watch": "ng build --watch --configuration development",

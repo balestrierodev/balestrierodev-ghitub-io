@@ -36,17 +36,17 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         gap: 10vw;
-
+        height: 22vmin;
+        max-height: 123px;
         a {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             transition: all 250ms ease;
-            height: 150px;
-
+            height: 100%;
             &:hover {
                 span {
                     scale: 1.2;
@@ -54,10 +54,9 @@
             }
 
             span {
+                display: block;
                 transition: all 250ms ease;
                 font-size: 8vh;
-                flex: 1;
-
                 &.telegram {
                     width: 7vh;
                     height: 7vh;
@@ -81,7 +80,7 @@
             strong {
                 font-size: 3vmin;
                 font-weight: bold;
-                margin-top: 2vmin;
+                margin-top: auto;
             }
         }
     }
@@ -101,16 +100,6 @@
             &:last-of-type {
                 font-size: 3vmin;
                 margin-top: 15px;
-            }
-        }
-    }
-}
-
-@media only screen and (orientation: portrait) {
-    :host {
-        .social {
-            a {
-                height: 88px;
             }
         }
     }

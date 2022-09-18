@@ -5,7 +5,6 @@ import {
     OnInit,
     ViewEncapsulation,
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
 import * as showdown from 'showdown';
 import { GithubApiService } from 'src/app/services/github-api-service';
@@ -27,7 +26,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
     constructor(
         private githubApiService: GithubApiService,
-        private route: ActivatedRoute,
         private elementRef: ElementRef
     ) {}
 

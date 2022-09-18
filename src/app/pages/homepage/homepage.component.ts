@@ -1,7 +1,6 @@
 import {
     AfterViewInit,
     Component,
-    ElementRef,
     OnDestroy,
     QueryList,
     ViewChildren,
@@ -37,7 +36,6 @@ export class HomepageComponent implements AfterViewInit, OnDestroy {
     destroy$: Subject<boolean> = new Subject();
 
     constructor(
-        private elementRef: ElementRef,
         private route: ActivatedRoute,
         private githubApiService: GithubApiService
     ) {}

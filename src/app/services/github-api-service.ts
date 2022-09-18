@@ -7,15 +7,13 @@ import { environment } from 'src/environments/environment';
     providedIn: 'root',
 })
 export class GithubApiService {
-    pages$: Observable<any> = this.httpClient.get(environment.readme, {
-        responseType: 'text',
-    });
-    tips$: Observable<any> = this.httpClient.get(environment.tips, {
-        responseType: 'text',
-    });
-    questions$: Observable<any> = this.httpClient.get(environment.questions, {
-        responseType: 'text',
-    });
+    pages$: Observable<any> = this.getPage(environment.readme);
+    tips$: Observable<any> = this.getPage(environment.tips);
+    questions$: Observable<any> = this.getPage(environment.questions);
 
     constructor(private httpClient: HttpClient) {}
+
+    getPage(page: string): Observable<any> {
+        return this.httpClient.get(page, { responseType: 'text' });
+    }
 }

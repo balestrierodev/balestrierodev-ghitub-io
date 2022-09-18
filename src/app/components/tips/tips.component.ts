@@ -5,7 +5,6 @@ import {
     OnInit,
     ViewEncapsulation,
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { interval, startWith, Subject, switchMap } from 'rxjs';
 import * as showdown from 'showdown';
 import { GithubApiService } from 'src/app/services/github-api-service';
@@ -28,7 +27,6 @@ export class TipsComponent implements OnInit, OnDestroy {
 
     constructor(
         private githubApiService: GithubApiService,
-        private route: ActivatedRoute,
         private elementRef: ElementRef
     ) {}
 
